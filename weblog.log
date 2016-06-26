@@ -1,0 +1,125 @@
+2016-06-23 11:33:37 INFO  Main:99 - Setting up environment...
+2016-06-23 11:33:41 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-23 11:33:41 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-23 11:33:45 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-23 11:34:51 INFO  Main:113 - All set!
+2016-06-23 11:34:54 INFO  Main:239 - Setup completed
+2016-06-23 11:35:54 INFO  Main:241 - Data has been loaded.
+2016-06-23 11:36:01 INFO  Main:243 - Retrieved Blog: [S2 Blog].
+2016-06-24 18:12:50 INFO  Main:99 - Setting up environment...
+2016-06-24 18:15:32 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-24 18:15:32 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-24 18:15:36 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-24 18:16:11 INFO  Main:113 - All set!
+2016-06-24 18:16:11 INFO  Main:239 - Setup completed
+2016-06-24 19:57:46 INFO  Main:99 - Setting up environment...
+2016-06-24 19:57:46 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-24 19:57:46 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-24 19:57:49 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-24 19:58:08 INFO  Main:113 - All set!
+2016-06-24 19:58:12 INFO  Main:239 - Setup completed
+2016-06-24 21:57:31 INFO  Main:99 - Setting up environment...
+2016-06-24 21:57:31 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-24 21:57:31 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-24 21:57:36 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-24 21:58:00 INFO  Main:113 - All set!
+2016-06-24 21:58:00 INFO  Main:239 - Setup completed
+2016-06-24 22:03:49 ERROR ControlConnection:147 - [Control connection] Cannot connect to any host, scheduling retry in 1000 milliseconds
+2016-06-24 22:03:49 FATAL Main:246 - Something went wrong, please look into the stacktrace here:
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9042 (com.datastax.driver.core.TransportException: [localhost/127.0.0.1:9042] Connection has been closed))
+	at com.datastax.driver.core.exceptions.NoHostAvailableException.copy(NoHostAvailableException.java:84)
+	at com.datastax.driver.core.DefaultResultSetFuture.extractCauseFromExecutionException(DefaultResultSetFuture.java:289)
+	at com.datastax.driver.core.DefaultResultSetFuture.getUninterruptibly(DefaultResultSetFuture.java:205)
+	at com.datastax.driver.core.AbstractSession.execute(AbstractSession.java:52)
+	at com.datastax.driver.mapping.Mapper.save(Mapper.java:143)
+	at in.naishe.simpleBlog.AbstractVO.save(AbstractVO.java:19)
+	at in.naishe.simpleBlog.Main.insertComments(Main.java:171)
+	at in.naishe.simpleBlog.Main.insertPosts(Main.java:158)
+	at in.naishe.simpleBlog.Main.insertData(Main.java:131)
+	at in.naishe.simpleBlog.Main.main(Main.java:240)
+Caused by: com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9042 (com.datastax.driver.core.TransportException: [localhost/127.0.0.1:9042] Connection has been closed))
+	at com.datastax.driver.core.RequestHandler.sendRequest(RequestHandler.java:108)
+	at com.datastax.driver.core.RequestHandler$1.run(RequestHandler.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-24 22:08:41 INFO  Main:99 - Setting up environment...
+2016-06-24 22:08:41 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-24 22:08:41 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-24 22:08:42 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-24 22:09:00 INFO  Main:113 - All set!
+2016-06-24 22:09:00 INFO  Main:239 - Setup completed
+2016-06-24 22:45:44 INFO  Main:241 - Data has been loaded.
+2016-06-24 22:45:45 INFO  Main:243 - Retrieved Blog: [HR Blog].
+2016-06-24 23:59:50 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-24 23:59:50 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-24 23:59:55 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-25 00:04:01 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-25 00:04:01 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-25 00:04:06 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-25 00:12:05 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-25 00:12:05 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-25 00:12:08 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-26 00:30:10 INFO  Main:113 - Setting up environment...
+2016-06-26 00:30:11 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-26 00:30:11 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-26 00:30:15 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'dc1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-26 00:31:15 INFO  Main:127 - All set!
+2016-06-26 00:31:15 INFO  Main:254 - Setup completed
+2016-06-26 00:31:56 FATAL Main:261 - Something went wrong, please look into the stacktrace here:
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9042 (com.datastax.driver.core.exceptions.DriverException: Timed out waiting for server response))
+	at com.datastax.driver.core.exceptions.NoHostAvailableException.copy(NoHostAvailableException.java:84)
+	at com.datastax.driver.core.DefaultResultSetFuture.extractCauseFromExecutionException(DefaultResultSetFuture.java:289)
+	at com.datastax.driver.core.DefaultResultSetFuture.getUninterruptibly(DefaultResultSetFuture.java:205)
+	at com.datastax.driver.core.AbstractSession.execute(AbstractSession.java:52)
+	at com.datastax.driver.mapping.Mapper.save(Mapper.java:143)
+	at in.naishe.simpleBlog.AbstractVO.save(AbstractVO.java:19)
+	at in.naishe.simpleBlog.Main.insertComments(Main.java:185)
+	at in.naishe.simpleBlog.Main.insertPosts(Main.java:172)
+	at in.naishe.simpleBlog.Main.insertData(Main.java:145)
+	at in.naishe.simpleBlog.Main.main(Main.java:255)
+Caused by: com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9042 (com.datastax.driver.core.exceptions.DriverException: Timed out waiting for server response))
+	at com.datastax.driver.core.RequestHandler.sendRequest(RequestHandler.java:108)
+	at com.datastax.driver.core.RequestHandler$1.run(RequestHandler.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-26 00:36:55 INFO  Main:113 - Setting up environment...
+2016-06-26 00:36:56 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-26 00:36:56 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-26 00:37:00 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'dc1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-26 00:37:28 INFO  Main:127 - All set!
+2016-06-26 00:37:28 INFO  Main:254 - Setup completed
+2016-06-26 00:41:33 ERROR ControlConnection:147 - [Control connection] Cannot connect to any host, scheduling retry in 1000 milliseconds
+2016-06-26 00:41:33 FATAL Main:261 - Something went wrong, please look into the stacktrace here:
+com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9042 (com.datastax.driver.core.TransportException: [localhost/127.0.0.1:9042] Connection has been closed))
+	at com.datastax.driver.core.exceptions.NoHostAvailableException.copy(NoHostAvailableException.java:84)
+	at com.datastax.driver.core.DefaultResultSetFuture.extractCauseFromExecutionException(DefaultResultSetFuture.java:289)
+	at com.datastax.driver.core.DefaultResultSetFuture.getUninterruptibly(DefaultResultSetFuture.java:205)
+	at com.datastax.driver.core.AbstractSession.execute(AbstractSession.java:52)
+	at com.datastax.driver.core.AbstractSession.execute(AbstractSession.java:36)
+	at in.naishe.simpleBlog.CommentVotes.save(CommentVotes.java:56)
+	at in.naishe.simpleBlog.Main.insertComments(Main.java:191)
+	at in.naishe.simpleBlog.Main.insertPosts(Main.java:172)
+	at in.naishe.simpleBlog.Main.insertData(Main.java:145)
+	at in.naishe.simpleBlog.Main.main(Main.java:255)
+Caused by: com.datastax.driver.core.exceptions.NoHostAvailableException: All host(s) tried for query failed (tried: localhost/127.0.0.1:9042 (com.datastax.driver.core.TransportException: [localhost/127.0.0.1:9042] Connection has been closed))
+	at com.datastax.driver.core.RequestHandler.sendRequest(RequestHandler.java:108)
+	at com.datastax.driver.core.RequestHandler$1.run(RequestHandler.java:179)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-06-26 00:45:04 INFO  Main:113 - Setting up environment...
+2016-06-26 00:45:05 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-26 00:45:05 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-26 00:45:10 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'dc1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-26 00:45:55 INFO  Main:127 - All set!
+2016-06-26 00:45:55 INFO  Main:254 - Setup completed
+2016-06-26 01:34:03 INFO  Main:256 - Data has been loaded.
+2016-06-26 01:34:04 INFO  Main:258 - Retrieved Blog: [HR Blog].
+2016-06-26 10:47:14 INFO  Main:113 - Setting up environment...
+2016-06-26 10:47:14 WARN  FrameCompressor:44 - Cannot find Snappy class, you should make sure the Snappy library is in the classpath if you intend to use it. Snappy compression will not be available for the protocol.
+2016-06-26 10:47:14 WARN  FrameCompressor:87 - Cannot find LZ4 class, you should make sure the LZ4 library is in the classpath if you intend to use it. LZ4 compression will not be available for the protocol.
+2016-06-26 10:47:15 INFO  DCAwareRoundRobinPolicy:198 - Using data-center name 'dc1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2016-06-26 10:47:38 INFO  Main:127 - All set!
+2016-06-26 10:47:38 INFO  Main:256 - Setup completed
