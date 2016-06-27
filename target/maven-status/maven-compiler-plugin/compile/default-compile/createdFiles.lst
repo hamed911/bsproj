@@ -1,0 +1,14 @@
+in\naishe\simpleBlog\Comment.class
+in\naishe\simpleBlog\AbstractVO.class
+in\naishe\simpleBlog\Blog.class
+in\naishe\simpleBlog\CassandraConnection$SessionWrapper.class
+in\naishe\simpleBlog\exceptions\BlogNotFoundException.class
+in\naishe\simpleBlog\Post.class
+in\naishe\simpleBlog\CommentVotes.class
+in\naishe\simpleBlog\AllQueries.class
+in\naishe\simpleBlog\RandomGenerator.class
+in\naishe\simpleBlog\CassandraConnection.class
+in\naishe\simpleBlog\PostVotes.class
+in\naishe\simpleBlog\Constants.class
+in\naishe\simpleBlog\Main.class
+in\naishe\simpleBlog\Category.class
